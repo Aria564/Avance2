@@ -1,0 +1,245 @@
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('https://i.pinimg.com/736x/79/68/8a/79688ae6ab6c49fd88d12e8e7c8b3984.jpg');
+}
+
+/* Header */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-family: 'renca';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FF6B6B;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-family: 'simply';
+    text-decoration: none;
+    color: #380322;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FF6B6B;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-container {
+    font-family: 'simply';
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.search-input {
+    font-family: 'simply';
+    border: none;
+    background: none;
+    outline: none;
+    width: 150px;
+    font-size: 0.9rem;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.login-btn {
+    font-family: 'simply';
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #FF5252;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Contenido principal */
+.main-content {
+    margin-top: 80px;
+}
+
+.hero-shading {
+    background-color: #fdecdf;
+    padding: 4rem 2rem;
+}
+
+.hero-shading-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-shading-text {
+    font-family: 'aeril';
+    flex: 1;
+}
+
+.hero-shading-text h2 {
+    font-family: 'renca';
+    font-size: 3rem;
+    color: #FF6B6B;
+}
+
+
+.hero-shading-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-shading-image img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+.new-arrivals {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.new-arrivals h2 {
+    font-family: 'renca';
+    font-size: 2rem;
+    color: #d83e3e;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mate-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+     transition-duration: 0.3s;
+}
+
+.mate-card img {
+     width: 350px;      /* Tamaño fijo horizontal */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.mate-card h3 {
+    font-size: 1.25rem;
+    color: #FF6B6B;
+    font-family: 'simply';
+}
+
+.mate-card p {
+    color: #380322;
+    font-family: 'aeril';
+}
+
+.mate-card:hover{
+    
+     transition-duration: 0.3s;
+     transform: translateY(-8px);
+     box-shadow: #555 0px 8px 24px;
+}
+
+
+
+/* PieDePagina */
+
+
+footer {
+     font-family: 'simply';
+    text-align: center;
+    padding: 1rem;
+    background: #FF6B6B;
+    color: white;
+    border-top: 1px solid ;
+}
+
+/* Fuentes */
+
+@font-face { /* Titulo*/
+    font-family: renca;
+    src: url(../fonts/Rencana.ttf);
+} 
+
+@font-face { /* Texto */
+    font-family: aeril;
+    src: url(../fonts/Aerial_Demo.ttf);
+}
+
+@font-face { /* SubTitulo */
+    font-family: simply;
+    src: url(../fonts/Simply\ Rounded\ Bold.ttf);
+}

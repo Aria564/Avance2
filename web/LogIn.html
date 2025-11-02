@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img height="50px" src="../img/icono.png" alt="">
+                <span class="logo-text">Rincon del camaron</span>
+            </div>
+            
+            <nav class="navigation">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="./Categorias.html" class="nav-link">Categorias</a>
+                <a href="./Materiales.html" class="nav-link">Materiales</a>
+                <a href="#" class="nav-link">3D</a>
+                <a href="./AbouUs.html" class="nav-link">Conocenos</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+               <a href="LogIn.html" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="login-hero-section">
+            <div class="login-container-LI">
+                <div class="login-form-wrapper">
+                    <h1 class="login-title">Bienvenido</h1>
+                    <p class="login-subtitle">Hola de nuevo! identificate para no perderte las novedades!</p>
+                    
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Escribe tu correo electrónico" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" id="password" name="password" class="form-input" placeholder="Escribe tu contraseña" required>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="remember">
+                                <span class="checkmark"></span>
+                                Recuérdame
+                            </label>
+                            <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        
+                        <button id="Iniciar" type="button" class="submit-btn">Iniciar sesión</button>
+                        
+                        <div class="divider">
+                            <span>or</span>
+                        </div>
+                        
+                        <div class="social-login">
+                            <button type="button" class="social-btn google-btn">
+                                <span class="social-icon">🔍</span>
+                                Continuar con Google
+                            </button>
+                            <button type="button" class="social-btn facebook-btn">
+                                <span class="social-icon">📘</span>
+                                Continuar con Facebook
+                            </button>
+                        </div>
+                        
+                        <p class="signup-link">
+                            No tienes una cuenta? <a href="./CrearCuenta.html" class="link">Registrate aqui</a>
+                        </p>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../js/index.js"></script>
+</body>
+</html>

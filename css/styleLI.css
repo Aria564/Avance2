@@ -1,0 +1,325 @@
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('https://i.pinimg.com/736x/79/68/8a/79688ae6ab6c49fd88d12e8e7c8b3984.jpg');
+}
+
+/* Header */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-family: 'renca';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FF6B6B;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-family: 'simply';
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FF6B6B;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-container {
+    font-family: 'simply';
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.search-input {
+    font-family: 'simply';
+    border: none;
+    background: none;
+    outline: none;
+    width: 150px;
+    font-size: 0.9rem;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.login-btn {
+    font-family: 'simply';
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #FF5252;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.des-principal{
+    margin-top: 85px;
+}
+.des-section{
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.des-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://i.pinimg.com/736x/5a/8b/b4/5a8bb459020148842156b8a67280e71b.jpg') center/cover;
+    background-attachment: absolute;
+    z-index: 1;
+}
+
+.des-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(72, 6, 16, 0.8) 0%;
+    z-index: 2;
+}
+
+.des-content {
+    position: relative;
+    z-index: 3;
+    padding: 0 2rem;
+}
+
+
+
+/* zzzzzzzzzzz */
+.titulo{
+    font-family: 'renca';
+    margin-top: 1rem;
+    color: #fbde9c;
+    font-size: 30px;
+}
+
+.expl-text{
+    font-family: 'aeril';
+    color: #fff8e1;
+    font-size: 20px;
+}
+
+.gallery-categoris{
+    padding: 4rem 2rem;
+}
+
+.gallery-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.gallery-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 5rem;
+}
+
+
+.gallery-item {
+    height:350px;
+    width: 300px;
+}
+
+.gallery-card {
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.3s;
+}
+
+.gallery-card:hover{
+     transition-duration: 0.3s;
+     transform: translateY(-8px);
+     box-shadow: #555 0px 8px 24px;
+}
+.gallery-link{
+    text-decoration: none;
+}
+.card-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    background: white;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+     font-family: 'simply';
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+     font-family: 'aeril';
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.main-about{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-left: 0.5rem;
+}
+
+.about-us{
+    align-items: center;
+    max-width: 800px;
+    background-color: rgba(246, 245, 231, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.about-gal {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.about-title{
+    font-size: 4rem;
+    font-family: 'renca';
+    color: #FF5252;;
+}
+
+.about-q{
+    font-size: 2.5rem;
+    font-family: 'simply';
+    color: #ff9354;;
+}
+
+.about-text{
+    font-size: 1.5rem;
+    font-family: 'aeril';
+    color: #380322;
+}
+
+.about-us-image{
+    width: 650px;   /* Ajusta el tamaño según lo que necesites */
+    height: auto;   /* Mantiene la proporción */
+    align-items: flex-end;
+    display: flex;
+}
+.about-us-image img {
+    width: 100%;
+    height: auto;
+    max-width: 650px; /* O el tamaño que prefieras */
+}
+
+footer {
+     font-family: 'simply';
+    text-align: center;
+    padding: 1rem;
+    background: #FF6B6B;
+    color: white;
+    border-top: 1px solid ;
+}
+
+
+@font-face { /* Titulo*/
+    font-family: renca;
+    src: url(../fonts/Rencana.ttf);
+} 
+
+@font-face { /* Texto */
+    font-family: aeril;
+    src: url(../fonts/Aerial_Demo.ttf);
+}
+
+@font-face { /* SubTitulo */
+    font-family: simply;
+    src: url(../fonts/Simply\ Rounded\ Bold.ttf);
+}
